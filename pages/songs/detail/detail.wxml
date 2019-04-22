@@ -1,0 +1,15 @@
+<!--pages/songs/detail/detail.wxml-->
+<view class='detail-container'>
+  <image class='head-img' src='{{song.picture}}'></image>
+  <text class='song-name'>{{song.title}}</text>
+  <view class='detail-content'>
+    <image 
+        catchtap="musicControl" 
+        class="musicImg" 
+        src="{{isPlay?'/images/music/playing.png':'/images/music/play.png'}}"></image>
+    <text>专辑：《{{song.albumtitle}}》</text>
+    <text>演唱者：{{song.artist}}</text>
+    <text>时间：{{song.public_time}}</text>
+    <text>来源：豆瓣音乐</text>
+  </view>
+</view>

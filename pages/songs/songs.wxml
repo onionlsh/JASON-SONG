@@ -1,0 +1,21 @@
+<!--pages/songs/songs.wxml-->
+<!-- navigatory页面链接跳转
+  官方https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html
+ -->
+ <view class='songs-container'>
+  <image class='songs-container-img' src='/images/music/music_index.jpg'></image>
+  <text class='head-text'>歌单列表</text>
+  <navigator 
+    url='/pages/songs/detail/detail?id={{index}}'
+    wx:for='{{songs}}'
+    wx:key='{{index}}' >
+    <view class='list-content'>
+    <!-- 默认item变量名 -->
+      <image src='/images/icon/music.png'></image>
+      <text class='song-name'>{{item.title}}</text>
+      <text class='song-intr'>专辑《{{item.albumtitle}}》</text>
+      <!-- <text class='album'>{{item.public_time}}</text> -->
+    </view>
+  </navigator>
+ </view>
+

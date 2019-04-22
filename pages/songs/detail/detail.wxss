@@ -1,0 +1,36 @@
+/* pages/songs/detail/detail.wxss */
+page{
+  background-color: #ffffff;
+}
+.detail-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.head-img{
+  margin: 200rpx auto 100rpx;
+  width: 50%;
+  height: 350rpx;
+}
+
+.song-name{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40rpx;
+  color: #000;
+}
+
+.detail-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.detail-content image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: auto;
+}

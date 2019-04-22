@@ -1,0 +1,64 @@
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 2rpx solid #efefef;
+  border-bottom: 2rpx solid #efefef;
+  padding: 10rpx 0;
+  margin: 20rpx 0 40rpx;
+}
+
+.date-avatar {
+  margin: 10rpx 0 20rpx 10rpx;
+}
+
+.date-avatar image {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle; /*设置元素垂直对齐方式*/
+}
+
+.date-avatar text {
+  font-size: 28rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.song-name {
+  font-size: 38rpx;
+  font-weight: 700;
+  margin: 10rpx;
+}
+
+.song-img {
+  width: 100%;
+  height: 340rpx;
+}
+
+.content {
+  font-size: 14px;
+  color: #666;
+  text-indent: 14px;
+  line-height: 28px;
+
+  /*设置超过n行隐藏*/
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.attention image {
+  width: 32rpx;
+  height: 34rpx;
+  vertical-align: middle;
+}
+
+.attention text {
+  font-size: 12px;
+  color: #666;
+  vertical-align: middle;
+  margin: 0 16rpx;
+}

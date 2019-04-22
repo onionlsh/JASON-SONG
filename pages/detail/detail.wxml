@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail-container'>
+  <image class='detail-header-img' 
+  src='{{dataObj.headImgSrc}}'></image>
+  <view class='detail-author-date'>
+    <image src='{{dataObj.avatar}}'></image>
+    <text>{{dataObj.author}}</text>
+    <text>发布于</text>
+    <text>{{dataObj.date}}</text>
+  </view>
+  <text class='detail-title'>{{dataObj.title}}</text>
+  <view class='detail-collection-share'>
+    <view class='col-share-img'>
+      <image catchtap='collect' 
+      src="{{isCollected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}"></image>
+      <image catchtap='handleShare' 
+      src='/images/icon/share.png'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+  <button open-type='share'>转发此文章</button>
+  <text class='detail_content'>{{dataObj.detailContext}}</text>
+</view>
